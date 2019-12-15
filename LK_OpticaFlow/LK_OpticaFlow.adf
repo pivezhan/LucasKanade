@@ -1,0 +1,72 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=LK_OpticaFlow
+
+[Library]
+LK_OpticaFlow=.\LK_OpticaFlow.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopeninsrc=1
+fileopenfolder=C:\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+LK_OpticaFlow=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=tb_comparisonunit|behavioral|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/ControlUnit.vhd=-1
+/divider.vhd=-1
+/..\..\..\..\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src\mem.vhd=-1
+/LK_Package.vhd=-1
+/decompressionunit.vhd=-1
+/LK_OpticalFlow.vhd=-1
+/tb_decompression_unit.vhd=-1
+/ComparisonUnit.vhd=-1
+/tb_ComparisonUnit.vhd=-1
+/Comparison.vhd=-1
+/n_count.vhd=-1
+
+[Files.Data]
+.\src\ControlUnit.vhd=VHDL Source Code
+.\src\divider.vhd=VHDL Source Code
+.\..\..\..\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src\mem.vhd=VHDL Source Code
+.\src\LK_Package.vhd=VHDL Source Code
+.\src\decompressionunit.vhd=VHDL Source Code
+.\src\LK_OpticalFlow.vhd=VHDL Source Code
+.\src\tb_decompression_unit.vhd=VHDL Source Code
+.\src\ComparisonUnit.vhd=VHDL Source Code
+.\src\tb_ComparisonUnit.vhd=VHDL Source Code
+.\src\Comparison.vhd=VHDL Source Code
+.\src\n_count.vhd=VHDL Source Code
+

@@ -1,0 +1,12 @@
+[Version]
+Version=8.3
+[Designs]
+lk_opticaflow=.\LK_OpticaFlow\LK_OpticaFlow.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+lk_opticaflow=1

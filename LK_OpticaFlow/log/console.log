@@ -1,0 +1,37 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ControlUnit.vhd $dsn/src/divider.vhd $dsn/../../../Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd $dsn/src/LK_Package.vhd $dsn/src/decompressionunit.vhd $dsn/src/LK_OpticalFlow.vhd $dsn/src/tb_decompression_unit.vhd $dsn/src/ComparisonUnit.vhd $dsn/src/tb_ComparisonUnit.vhd $dsn/src/Comparison.vhd $dsn/src/n_count.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\ControlUnit.vhd
+# Warning: COMP96_0003: Source file "C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\ControlUnit.vhd" is empty.
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\divider.vhd
+# Warning: COMP96_0003: Source file "C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\divider.vhd" is empty.
+# File: C:\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src\mem.vhd
+# Compile Entity "mem"
+# Compile Architecture "rtl" of Entity "mem"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0122: decompressionunit.vhd : (68, 1): Symbol "Radix4_reduce" has already been declared in this scope.
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\LK_OpticalFlow.vhd
+# Compile Entity "LK_OpticalFlow"
+# Compile Architecture "behavioral" of Entity "LK_OpticalFlow"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\tb_decompression_unit.vhd
+# Compile Entity "tb_decompression_unit"
+# Compile Architecture "behavioral" of Entity "tb_decompression_unit"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "behavioral" of Entity "ComparisonUnit"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\tb_ComparisonUnit.vhd
+# Compile Entity "tb_ComparisonUnit"
+# Compile Architecture "behavioral" of Entity "tb_ComparisonUnit"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\Comparison.vhd
+# Compile Entity "Comparison"
+# Compile Architecture "behavioral" of Entity "Comparison"
+# File: C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\n_count.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavioral" of Entity "counter"
+# Compile failure 1 Errors 2 Warnings  Analysis time :  0.7 [s]
