@@ -1,12 +1,2 @@
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\ControlUnit.vhd" VHDL LK_OpticaFlow 2 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\divider.vhd" VHDL LK_OpticaFlow 2 0 0
-"C:\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src\mem.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\LK_Package.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\decompressionunit.vhd" VHDL LK_OpticaFlow 0 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\LK_OpticalFlow.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\tb_decompression_unit.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\ComparisonUnit.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\tb_ComparisonUnit.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\Comparison.vhd" VHDL LK_OpticaFlow 1 0 0
-"C:\My_Designs\LK_OpticalFlow\LK_OpticaFlow\src\n_count.vhd" VHDL LK_OpticaFlow 1 0 0
+"C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd" VHDL LK_OpticaFlow 1 0 0
 . . 0 0 0

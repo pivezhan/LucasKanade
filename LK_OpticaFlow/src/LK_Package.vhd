@@ -11,6 +11,9 @@ package LK_Package is
 	constant DATA_WIDTH : integer := DELTA_T_WIDTH*DELTA_T_NUM + TS_SIZE + TS_WIDTH; -- the length of section inside the ring buffer that stores the number of events 
 	constant ADDR_WIDTH : integer:=16;	-- the address width for Ring buffer based block ram
 	constant AXIS_LENGTH : integer:=8; -- the width of x, y addresses in frame 
-	type array_deltat is array(DELTA_T_NUM-1 downto 0) of std_logic_vector((TS_WIDTH-1) downto 0);
+	subtype TSArray is std_logic_vector((TS_WIDTH-1) downto 0);
+--	constant Threshold_Value : TSArray := (x"AA", others => '0'); -- the width of x, y addresses in frame 
+	type array_deltat is array(DELTA_T_NUM-1 downto 0) of TSArray;
+	type RingBuffer is array(DELTA_T_NUM downto 0) of TSArray; -- array of ring buffer
 	type array_deltat2d is array(TS_SIZE+1 downto 0) of array_deltat;
 end package;

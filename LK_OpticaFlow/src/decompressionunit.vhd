@@ -15,69 +15,24 @@ entity decompression_unit is
 	DATA_WIDTH : integer := DATA_WIDTH -- data_width = TS_SIZE + TS_WIDTH + DELTA_T_WIDTH*DELTA_T_NUM
 	);
 	port(
-	in_valid : in std_logic;
-	data_in : in std_logic_vector((DATA_WIDTH - 1) downto 0);
-	data_out : out array_deltat;
-	out_valid : out std_logic
+		Data_In : in array_deltat;	 
+		Previous_TS : in std_logic_vector((TS_SIZE - 1) downto 0);
+		Current_TS : in std_logic_vector((TS_SIZE - 1) downto 0);
+		Limitted_TS : out std_logic_vector((TS_SIZE - 1) downto 0);
+		Data_Out : out RingBuffer
 	);
 end entity;
-
---architecture kogge_stone of decompression_unit is
---	signal prefixarray : array_deltat2d:=(others=>(others=>(others => '0')));
 --
---begin 
---initailize:	for i in 0 to (DELTA_T_NUM - 1) generate
---		prefixarray(0)(i)((DELTA_T_WIDTH - 1) downto 0) <= data_in((DATA_WIDTH-TS_WIDTH-TS_SIZE-((DELTA_T_NUM-i-1)*DELTA_T_WIDTH)-1) downto (DATA_WIDTH-TS_WIDTH-TS_SIZE-((DELTA_T_NUM-i)*DELTA_T_WIDTH)));
---	end generate;	
---
---Level_j:		for j in 0 to TS_SIZE generate
---Array_i:			for i in 0 to (DELTA_T_NUM - 1) generate
---Cond_add:					if (i >= 2**j) generate
---								prefixarray(j+1)(i) <= prefixarray(j)(i) + prefixarray(j)(i-2**j);
---							end generate;
---Cond_pass:					if (i < 2**j) generate
---								prefixarray(j+1)(i) <= prefixarray(j)(i);
---								data_out(i) <= data_in((DATA_WIDTH-TS_SIZE-1) downto (DATA_WIDTH-TS_SIZE-TS_WIDTH)) - prefixarray(j)(i);
---							end generate;
---					end generate;
---				end generate;
---
---
---	out_valid <= '1' when (in_valid = '1') else '0';
---end kogge_stone;									
-
 architecture radix4_sklanski of decompression_unit is
-	signal prefixarray : array_deltat2d:=(others=>(others=>(others => '0')));
+constant ThresholdValue : integer:=100;
 
 begin 
-initailize:	for i in 0 to (DELTA_T_NUM - 1) generate
-		prefixarray(0)(i)((DELTA_T_WIDTH - 1) downto 0) <= data_in((DATA_WIDTH-TS_WIDTH-TS_SIZE-((DELTA_T_NUM-i-1)*DELTA_T_WIDTH)-1) downto (DATA_WIDTH-TS_WIDTH-TS_SIZE-((DELTA_T_NUM-i)*DELTA_T_WIDTH)));
+Limitted_TS <= Current_TS - std_logic_vector(to_unsigned(ThresholdValue, Limitted_TS'length));
+Data_Out(0) <= Previous_TS;
+DecompressedArray:	for i in 1 to DELTA_T_NUM generate
+		Data_Out(i) <= Previous_TS - data_in(i-1);
 end generate;	
 -- combinational
-Level_j:		for j in 0 to TS_SIZE generate
-Array_i:			for i in 0 to (DELTA_T_NUM - 1) generate
-Radix4_reduce:			if (i < 4) generate
-Cond_add:					if (i >= 2**j) and ((i mod 2**j) /= 0) generate
-								prefixarray(j+1)(i) <= prefixarray(j)(i) + prefixarray(j)(i-2**j);
-							end generate;
-Cond_pass:					if (i < 2**j) generate
-								prefixarray(j+1)(i) <= prefixarray(j)(i);
-								data_out(i) <= data_in((DATA_WIDTH-TS_SIZE-1) downto (DATA_WIDTH-TS_SIZE-TS_WIDTH)) - prefixarray(j)(i);
-							end generate;
-						end generate;
-Radix4_reduce:			if (i >= 4) generate
-Cond_add:					if (i >= 2**j) and ((i mod 2**j) /= 0) generate
-								prefixarray(j+1)(i) <= prefixarray(j)(i) + prefixarray(j)(i-2**j);
-							end generate;
-Cond_pass:					if (i < 2**j) generate
-								prefixarray(j+1)(i) <= prefixarray(j)(i);
-								data_out(i) <= data_in((DATA_WIDTH-TS_SIZE-1) downto (DATA_WIDTH-TS_SIZE-TS_WIDTH)) - prefixarray(j)(i);
-							end generate;
-					   	end generate;
-					end generate;
-				end generate;
 
-
-	out_valid <= '1' when (in_valid = '1') else '0';
 end radix4_sklanski;			
 					  

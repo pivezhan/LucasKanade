@@ -1,36 +1,39 @@
-timestamp=1576365893941
+timestamp=1576637149112
 
 [comparison]
-A/behavioral=21|./src/Comparison.vhd|30|1*1439129
-B/behavioral=3*393373
+A/behavioral=21|./src/Comparison.vhd|30|1*1521489
+B/behavioral=3*413223
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*212026
-I/behavioral=0*214573
-M=11|0|v80|1576365893797|./src/Comparison.vhd|0*211088*0x9034c0b3ccdbbdfc6d126ad607677efd7c8c9c34|0*211945*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v80|1576365893801|./src/Comparison.vhd|0*212317*0xb7b9285562bd4f41dbee23300c586dd87b3354b7|0*214478*0xb33770ff1c10522f9491560174ac8e6c
+I/behavioral=0*237166
+M=11|0|v80|1576634858775|./src/Comparison.vhd|0*211088*0x9034c0b3ccdbbdfc6d126ad607677efd7c8c9c34|0*211945*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v80|1576634858780|./src/Comparison.vhd|0*212317*0xb7b9285562bd4f41dbee23300c586dd87b3354b7|0*214478*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Comparison.vhd|7
 
 [comparisonunit]
-A/behavioral=21|./src/ComparisonUnit.vhd|30|1*1422867
-B/behavioral=3*386323
+A/behavioral=+21|./src/ComparisonUnit.vhd|30|1*1422867
+A/structural=21|./src/ComparisonUnit.vhd|78|1*1548292
+B/structural=3*419911
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
-I=0*162575
-I/behavioral=0*199349
-M=11|0|v80|1573627201242|./src/ComparisonUnit.vhd|0*161602*0x980acc3fd0cf9dc00631599b4bfdd6572b404cd9|0*162486*0xab32bc1a2daf049573e14469f634e0e6
+C/structural=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
+I=0*244212
+I/structural=0*245443
+M=11|0|v80|1576637130635|./src/ComparisonUnit.vhd|0*243342*0xb8b4631285e1ad50e0ae5ab0766d14bd3b9c8bd4|0*244123*0xab32bc1a2daf049573e14469f634e0e6
 M/behavioral=21|0|v80|1576365893618|./src/ComparisonUnit.vhd|0*196174*0x9378df22968daf8b8e4a4307224b69b27f1f6b8e|0*199246*0xb33770ff1c10522f9491560174ac8e6c
+M/structural=21|0|v80|1576637148961|./src/ComparisonUnit.vhd|0*244507*0x404c34ca04ee01268d4fb96b53aa5baf04252475|0*245340*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/ComparisonUnit.vhd|7
 
 [counter]
-A/behavioral=21|./src/n_count.vhd|23|1*1448940
-B/behavioral=3*394068
+A/behavioral=21|./src/n_count.vhd|23|1*1531198
+B/behavioral=3*413918
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*108248
 I/behavioral=0*108959
-M=11|0|v80|1573584239144|./src/n_count.vhd|0*107575*0x2a41fd0f1f18ed4e73f41b406096f31901fc3509|0*108173*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v80|1576365893884|./src/n_count.vhd|0*108536*0x2f3361b6cca38421bbc6d07ae8158de989a0acbf|0*108870*0xb33770ff1c10522f9491560174ac8e6c
+M=11|0|v80|1576634858863|./src/n_count.vhd|0*107575*0x2a41fd0f1f18ed4e73f41b406096f31901fc3509|0*108173*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v80|1576634858868|./src/n_count.vhd|0*108536*0x2f3361b6cca38421bbc6d07ae8158de989a0acbf|0*108870*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/n_count.vhd|7
 
 [decmpression_unit]
@@ -45,60 +48,80 @@ M/kogge_stone=21|0|v80|1573335893089|./src/decompressionunit.vhd|0*76530*0x653d3
 R=./src/decompressionunit.vhd|7
 
 [decompression_unit]
-A/kogge_stone=21|./src/decompressionunit.vhd|25|1*1382750
-A/radix4_sklanski=21|./src/decompressionunit.vhd|49|1*1403138
-B/kogge_stone=3*376692
-B/radix4_sklanski=3*379674
+A/kogge_stone=+21|./src/decompressionunit.vhd|26|1*1457610
+A/radix4_sklanski=21|./src/decompressionunit.vhd|26|1*1495045
+B/radix4_sklanski=3*406794
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/kogge_stone=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/radix4_sklanski=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
-I=0*112228
-I/kogge_stone=0*113563
-I/radix4_sklanski=0*204860
-M=11|0|v80|1573584400897|./src/decompressionunit.vhd|0*111457*0x24f1d8632c8c5d70c8d9c3b823414d022e2b2119|0*112132*0xab32bc1a2daf049573e14469f634e0e6
-M/kogge_stone=21|0|v80|1573647210324|./src/decompressionunit.vhd|0*112527*0xcd7c496327c68e77dfde50b02685fa66c81158b0|0*113452*0xb33770ff1c10522f9491560174ac8e6c
-M/radix4_sklanski=21|0|v80|1573647986207|./src/decompressionunit.vhd|0*203790*0xdf951c337b51b399b845e95723605fd7085c5673|0*204745*0xb33770ff1c10522f9491560174ac8e6c
+I=0*228719
+I/radix4_sklanski=0*229592
+M=11|0|v80|1576634858332|./src/decompressionunit.vhd|0*227865*0x5e2a7c3f7df6136278c33b7bde187688e5ccb714|0*228623*0xab32bc1a2daf049573e14469f634e0e6
+M/kogge_stone=21|0|v80|1576556252507|./src/decompressionunit.vhd|0*219468*0x4f4c65cb42a818707caedcdef82b046008848d2b|0*220278*0xb33770ff1c10522f9491560174ac8e6c
+M/radix4_sklanski=21|0|v80|1576634858338|./src/decompressionunit.vhd|0*229018*0xb7dab9d01c3341541f277e3686016c0703a84e50|0*229477*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/decompressionunit.vhd|7
 
 [lk_opticalflow]
-A/behavioral=21|./src/LK_OpticalFlow.vhd|31|1*1410690
-B/behavioral=3*383832
+A/behavioral=21|./src/LK_OpticalFlow.vhd|31|1*1499323
+B/behavioral=3*407951
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*8468
 I/behavioral=0*11253
-M=11|0|v80|1573335524130|./src/LK_OpticalFlow.vhd|0*7367*0xedcf778566106d00cbad7dceed0765d44caca299|0*8379*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v80|1576365893457|./src/LK_OpticalFlow.vhd|0*10387*0x2d8581e66a51e17d3f074f5b4ad61f216ef820fa|0*11150*0xb33770ff1c10522f9491560174ac8e6c
+M=11|0|v80|1576634858493|./src/LK_OpticalFlow.vhd|0*7367*0xedcf778566106d00cbad7dceed0765d44caca299|0*8379*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v80|1576634858499|./src/LK_OpticalFlow.vhd|0*10387*0x2d8581e66a51e17d3f074f5b4ad61f216ef820fa|0*11150*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/LK_OpticalFlow.vhd|6
 
 [lk_package]
-B/lk_package=3*136782
-C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
-E=1*556530
-I=0*79251
-M=3|0|v80|1573335523990|./src/LK_Package.vhd|0*78509*0x0125013363e40fe0f3ee03a7b00b324ddd40860b|0*79170*0xab32bc1a2daf049573e14469f634e0e6
+B/lk_package=3*403099
+C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230b00000090c01c7
+E=1*1482701
+I=0*231502
+M=3|0|v80|1576631439224|./src/LK_Package.vhd|0*230691*0x83c4f25ce01bf31bccb17151fa614f36edd712ab|0*231421*0x9fdd1814079b29cc49846d51549e1464
 R=./src/LK_Package.vhd|6
 
 [mem]
-A/rtl=21|C:/Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd|25|1*1408238
-B/rtl=3*382800
+A/rtl=21|C:/Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd|25|1*1492593
+B/rtl=3*405762
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/rtl=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*2986
 I/rtl=0*3746
 M=11|0|v80|1573075754148|c:/Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd|0*2358*0xf12b65bb842672de3bcf2c0f8369c1e5d5a7d6c8|0*2853*0xab32bc1a2daf049573e14469f634e0e6
-M/rtl=21|0|v80|1576365893230|c:/Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd|0*3145*0xaa6db60faa3273bb7ea1c5903f5cc24c19954f52|0*3606*0xb33770ff1c10522f9491560174ac8e6c
+M/rtl=21|0|v80|1576634857288|c:/Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd|0*3145*0xaa6db60faa3273bb7ea1c5903f5cc24c19954f52|0*3606*0xb33770ff1c10522f9491560174ac8e6c
 R=c:/Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd|8
 
+[prefixadder]
+A/radix4_sklanski=21|./src/PrefixAdder.vhd|48|1*1534249
+B/radix4_sklanski=3*414917
+C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
+C/radix4_sklanski=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
+I=0*238364
+I/radix4_sklanski=0*239903
+M=11|0|v80|1576634858946|./src/PrefixAdder.vhd|0*237679*0x7f85c70e3ede9ff5d1fcb87ba0ee823271ee5476|0*238281*0xab32bc1a2daf049573e14469f634e0e6
+M/radix4_sklanski=21|0|v80|1576634858950|./src/PrefixAdder.vhd|0*238656*0xa347971532882725899f07125359327915ecd89e|0*239801*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/PrefixAdder.vhd|7
+
+[setbitcounter]
+A/behavioral=21|./src/SetBitCounter.vhd|25|1*1539699
+B/behavioral=3*418366
+C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
+C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
+I=0*235483
+I/behavioral=0*236752
+M=11|0|v80|1576634553501|./src/SetBitCounter.vhd|0*234716*0x91e0d8c28c2562070f433562e1e8b166276f400b|0*235396*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v80|1576634859048|./src/SetBitCounter.vhd|0*235768*0x23ba1fb1bf00779439569879cd3bcb5e8107f968|0*236651*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/SetBitCounter.vhd|7
+
 [tb_comparisonunit]
-A/behavioral=21|./src/tb_ComparisonUnit.vhd|20|1*1428951
-B/behavioral=3*390592
+A/behavioral=21|./src/tb_ComparisonUnit.vhd|20|1*1511413
+B/behavioral=3*410442
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*206212
-I/behavioral=0*209982
-M=11|0|v80|1576365893709|./src/tb_ComparisonUnit.vhd|0*205559*0x66e16d95d7c03857ab2cf6aa4656b31e68a2c807|0*206117*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v80|1576365893714|./src/tb_ComparisonUnit.vhd|0*206510*0x5289fca7d1b13af554c25bc69a4b897fd9bf55be|0*209873*0xb33770ff1c10522f9491560174ac8e6c
+I/behavioral=0*237109
+M=11|0|v80|1576634858680|./src/tb_ComparisonUnit.vhd|0*205559*0x66e16d95d7c03857ab2cf6aa4656b31e68a2c807|0*206117*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v80|1576634858687|./src/tb_ComparisonUnit.vhd|0*206510*0x5289fca7d1b13af554c25bc69a4b897fd9bf55be|0*209873*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/tb_ComparisonUnit.vhd|7
 
 [tb_decmpression_unit]
@@ -113,34 +136,36 @@ M/behavioral=21|0|v80|1573335893230|./src/tb_decmpression_unit.vhd|0*29613*0x7d2
 R=./src/tb_decmpression_unit.vhd|6
 
 [tb_decompression_unit]
-A/behavioral=21|./src/tb_decompression_unit.vhd|18|1*1417583
-B/behavioral=3*384262
+A/behavioral=21|./src/tb_decompression_unit.vhd|18|1*1506216
+B/behavioral=3*408381
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/behavioral=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*102264
-I/behavioral=0*127017
-M=11|0|v80|1573573735177|./src/tb_decompression_unit.vhd|0*101652*0xc46450157cdf804c8d6a814bb6b5e69061898f8f|0*102161*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|v80|1576365893529|./src/tb_decompression_unit.vhd|0*125351*0x73e9825efac005b4fa367d3cba3694a14b578575|0*126900*0xb33770ff1c10522f9491560174ac8e6c
+I/behavioral=0*237048
+M=11|0|v80|1576634858572|./src/tb_decompression_unit.vhd|0*101652*0xc46450157cdf804c8d6a814bb6b5e69061898f8f|0*102161*0xab32bc1a2daf049573e14469f634e0e6
+M/behavioral=21|0|v80|1576634858581|./src/tb_decompression_unit.vhd|0*125351*0x73e9825efac005b4fa367d3cba3694a14b578575|0*126900*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/tb_decompression_unit.vhd|6
 
 [~A]
-ModifyID=1868
+ModifyID=2036
 Version=73
 
 [~MFT]
-0=821|0LK_OpticaFlow.mgf|214573|176986
-1=551|1LK_OpticaFlow.mgf|1448940|1385283
-3=551|3LK_OpticaFlow.mgf|394068|371152
+0=968|0LK_OpticaFlow.mgf|245443|202710
+1=592|1LK_OpticaFlow.mgf|1548292|1473321
+3=594|3LK_OpticaFlow.mgf|419911|400222
 
 [~U]
 comparison=Comparison 11|0*210417|
-comparisonunit=ComparisonUnit 11|0*160881|
+comparisonunit=ComparisonUnit 11|0*242720|
 counter=11|0*107142|
 decmpression_unit=11|0*55849|
-decompression_unit=11|0*110921|
+decompression_unit=11|0*227259|
 lk_opticalflow=LK_OpticalFlow 11|0*6536|
-lk_package=LK_Package 3|0*77866|0*78085
+lk_package=LK_Package 3|0*229907|0*230183
 mem=11|0*2027|
+prefixadder=PrefixAdder 11|0*237216|
+setbitcounter=11|0*234189|
 tb_comparisonunit=tb_ComparisonUnit 11|0*205175|
 tb_decmpression_unit=11|0*26386|
 tb_decompression_unit=11|0*101281|

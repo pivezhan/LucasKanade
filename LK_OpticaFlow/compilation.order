@@ -9,3 +9,7 @@
 .\src\tb_ComparisonUnit.vhd
 .\src\Comparison.vhd
 .\src\n_count.vhd
+.\src\PrefixAdder.vhd
+.\src\SetBitCounter.vhd
+.\src\Shifter.vhd
+.\src\ParaEvent.vhd
