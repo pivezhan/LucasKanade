@@ -11,5 +11,7 @@ i<>.\src\Comparison.vhd
 i<>.\src\n_count.vhd
 i<>.\src\PrefixAdder.vhd
 i<>.\src\SetBitCounter.vhd
-i<>.\src\Shifter.vhd
 i<>.\src\ParaEvent.vhd
+i<>.\src\STD_FIFO.vhd
+i<>.\src\nregister_sync.vhd
+i<>.\src\ParaHist.vhd

@@ -1,4 +1,4 @@
-timestamp=1576637149112
+timestamp=1576726917437
 
 [comparison]
 A/behavioral=21|./src/Comparison.vhd|30|1*1521489
@@ -113,6 +113,12 @@ M=11|0|v80|1576634553501|./src/SetBitCounter.vhd|0*234716*0x91e0d8c28c2562070f43
 M/behavioral=21|0|v80|1576634859048|./src/SetBitCounter.vhd|0*235768*0x23ba1fb1bf00779439569879cd3bcb5e8107f968|0*236651*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/SetBitCounter.vhd|7
 
+[shifter]
+C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
+I=0*246982
+M=11|0|v80|1576726917425|./src/Shifter.vhd|0*246246*0x00bc2ea9b4eecb4ebd79db281cd0d4030f547c11|0*246907*0xab32bc1a2daf049573e14469f634e0e6
+R=./src/Shifter.vhd|7
+
 [tb_comparisonunit]
 A/behavioral=21|./src/tb_ComparisonUnit.vhd|20|1*1511413
 B/behavioral=3*410442
@@ -147,11 +153,11 @@ M/behavioral=21|0|v80|1576634858581|./src/tb_decompression_unit.vhd|0*125351*0x7
 R=./src/tb_decompression_unit.vhd|6
 
 [~A]
-ModifyID=2036
+ModifyID=2037
 Version=73
 
 [~MFT]
-0=968|0LK_OpticaFlow.mgf|245443|202710
+0=972|0LK_OpticaFlow.mgf|246982|202710
 1=592|1LK_OpticaFlow.mgf|1548292|1473321
 3=594|3LK_OpticaFlow.mgf|419911|400222
 
@@ -166,6 +172,7 @@ lk_package=LK_Package 3|0*229907|0*230183
 mem=11|0*2027|
 prefixadder=PrefixAdder 11|0*237216|
 setbitcounter=11|0*234189|
+shifter=11|0*245749|
 tb_comparisonunit=tb_ComparisonUnit 11|0*205175|
 tb_decmpression_unit=11|0*26386|
 tb_decompression_unit=11|0*101281|

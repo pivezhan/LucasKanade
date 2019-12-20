@@ -17,7 +17,7 @@ entity shifter is
 	port(
 		data_in : in std_logic_vector((DATA_WIDTH - 1) downto 0);		  -- input data from input ring buffer
 		Current_ts : in std_logic_vector((TS_SIZE - 1) downto 0);  -- TS - Threshold value
-		data_out : out std_logic_vector((DATA_WIDTH - 1) downto 0);	   -- output to shifter size unit
+		data_out : out std_logic_vector((DATA_WIDTH - 1) downto 0)	   -- output to shifter size unit
 	);
 end entity;
 architecture behavioral of shifter is

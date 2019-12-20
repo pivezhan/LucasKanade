@@ -25,7 +25,7 @@ REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
 fileopeninsrc=1
-fileopenfolder=C:\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src
+fileopenfolder=C:\My_Designs\LK\LK_OpticaFlow\src
 
 [LocalVerilogSets]
 EnableSLP=1
@@ -58,8 +58,10 @@ Selected=
 /n_count.vhd=-1
 /PrefixAdder.vhd=-1
 /SetBitCounter.vhd=-1
-/Shifter.vhd=-1
 /ParaEvent.vhd=-1
+/STD_FIFO.vhd=-1
+/nregister_sync.vhd=-1
+/ParaHist.vhd=-1
 
 [Files.Data]
 .\src\ControlUnit.vhd=VHDL Source Code
@@ -75,6 +77,8 @@ Selected=
 .\src\n_count.vhd=VHDL Source Code
 .\src\PrefixAdder.vhd=VHDL Source Code
 .\src\SetBitCounter.vhd=VHDL Source Code
-.\src\Shifter.vhd=VHDL Source Code
 .\src\ParaEvent.vhd=VHDL Source Code
+.\src\STD_FIFO.vhd=VHDL Source Code
+.\src\nregister_sync.vhd=VHDL Source Code
+.\src\ParaHist.vhd=VHDL Source Code
 

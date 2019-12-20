@@ -11,5 +11,7 @@
 .\src\n_count.vhd
 .\src\PrefixAdder.vhd
 .\src\SetBitCounter.vhd
-.\src\Shifter.vhd
 .\src\ParaEvent.vhd
+.\src\STD_FIFO.vhd
+.\src\nregister_sync.vhd
+.\src\ParaHist.vhd

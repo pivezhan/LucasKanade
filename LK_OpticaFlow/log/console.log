@@ -407,3 +407,27 @@ acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
 # Compile Entity "ComparisonUnit"
 # Compile Architecture "structural" of Entity "ComparisonUnit"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/Shifter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd
+# Compile Entity "shifter"
+# Error: COMP96_0018: Shifter.vhd : (21, 2): Identifier expected.
+# Compile Architecture "behavioral" of Entity "shifter"
+# Error: COMP96_0056: Shifter.vhd : (23, 1): Cannot find referenced entity declaration "shifter".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/Shifter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd
+# Compile Entity "shifter"
+# Compile Architecture "behavioral" of Entity "shifter"
+# Error: COMP96_0078: Shifter.vhd : (28, 144): Unknown identifier "tempring".
+# Error: COMP96_0078: Shifter.vhd : (28, 180): Unknown identifier "zerodelta".
+# Error: COMP96_0133: Shifter.vhd : (28, 144): Cannot find object declaration.
+# Error: COMP96_0289: Shifter.vhd : (28, 144): Prefix of index must be an array.
+# Error: COMP96_0289: Shifter.vhd : (28, 152): Prefix of index must be an array.
+# Error: COMP96_0077: Shifter.vhd : (28, 144): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0133: Shifter.vhd : (28, 180): Cannot find object declaration.
+# Error: COMP96_0077: Shifter.vhd : (28, 180): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]
