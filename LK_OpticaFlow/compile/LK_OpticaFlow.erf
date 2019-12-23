@@ -1,0 +1,13 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 
+MESSAGE "Compile Entity "shifter"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "shifter"" 
+ERROR COMP96_0078: "Unknown identifier "tempring"." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 144
+ERROR COMP96_0078: "Unknown identifier "zerodelta"." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 180
+ERROR COMP96_0133: "Cannot find object declaration." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 144
+ERROR COMP96_0289: "Prefix of index must be an array." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 144
+ERROR COMP96_0289: "Prefix of index must be an array." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 152
+ERROR COMP96_0077: "Undefined type of expression. Expected type 'BOOLEAN'." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 144
+ERROR COMP96_0133: "Cannot find object declaration." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 180
+ERROR COMP96_0077: "Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'." "C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd" 28 180
+FAILURE "Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

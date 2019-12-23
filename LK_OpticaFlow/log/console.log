@@ -1,0 +1,433 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design Explorer: Shortcut to "C:\My_Designs\LK\LK_OpticalFlow.aws" design added.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0122: decompressionunit.vhd : (51, 2): Symbol "prefixarray" has already been declared in this scope.
+# Error: COMP96_0122: decompressionunit.vhd : (68, 1): Symbol "Radix4_reduce" has already been declared in this scope.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0122: decompressionunit.vhd : (68, 1): Symbol "Radix4_reduce" has already been declared in this scope.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: ELAB1_0008: decompressionunit.vhd : (62, 32): Cannot read output : "prefixarray".
+# Error: ELAB1_0008: decompressionunit.vhd : (65, 32): Cannot read output : "prefixarray".
+# Error: ELAB1_0008: decompressionunit.vhd : (70, 32): Cannot read output : "prefixarray".
+# Error: ELAB1_0008: decompressionunit.vhd : (73, 32): Cannot read output : "prefixarray".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Error: COMP96_0018: decompressionunit.vhd : (23, 2): Identifier expected.
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0122: decompressionunit.vhd : (51, 2): Symbol "prefixarray" has already been declared in this scope.
+# Error: COMP96_0078: decompressionunit.vhd : (79, 1): Unknown identifier "data_out".
+# Error: COMP96_0133: decompressionunit.vhd : (79, 1): Cannot find object declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "kogge_stone" of Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0015: LK_Package.vhd : (14, 79): ')' expected.
+# Error: COMP96_0018: LK_Package.vhd : (15, 21): Identifier expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0015: LK_Package.vhd : (14, 98): '=>' expected.
+# Error: COMP96_0018: LK_Package.vhd : (15, 21): Identifier expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0018: LK_Package.vhd : (15, 21): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0015: LK_Package.vhd : (15, 66): '=>' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0619: LK_Package.vhd : (15, 39): Subaggregates in associations are allowed only for multidimensional arrays and arrays of arrays.
+# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
+# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0619: LK_Package.vhd : (15, 49): Subaggregates in associations are allowed only for multidimensional arrays and arrays of arrays.
+# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
+# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0077: LK_Package.vhd : (15, 39): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
+# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0077: LK_Package.vhd : (15, 39): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
+# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0029: LK_Package.vhd : (15, 38): Expression expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Error: COMP96_0077: LK_Package.vhd : (15, 41): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0079: LK_Package.vhd : (15, 40): Invalid aggregate.
+# Error: COMP96_0077: LK_Package.vhd : (15, 40): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2008  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Error: COMP96_0016: decompressionunit.vhd : (25, 1): Design unit declaration expected.
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0019: decompressionunit.vhd : (31, 1): Keyword 'when' expected.
+# Error: COMP96_0015: decompressionunit.vhd : (31, 1): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0019: decompressionunit.vhd : (31, 1): Keyword 'when' expected.
+# Error: COMP96_0015: decompressionunit.vhd : (31, 1): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0143: decompressionunit.vhd : (30, 1): Object "Limitted_TS" may not be written
+# Error: COMP96_0078: decompressionunit.vhd : (30, 46): Unknown identifier "to_unssigned".
+# Error: COMP96_0133: decompressionunit.vhd : (30, 46): Cannot find object declaration.
+# Error: COMP96_0289: decompressionunit.vhd : (30, 46): Prefix of index must be an array.
+# Error: COMP96_0149: decompressionunit.vhd : (30, 46): Explicit type conversions are allowed between closely related types only.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Error: COMP96_0078: decompressionunit.vhd : (30, 46): Unknown identifier "to_unssigned".
+# Error: COMP96_0133: decompressionunit.vhd : (30, 46): Cannot find object declaration.
+# Error: COMP96_0289: decompressionunit.vhd : (30, 46): Prefix of index must be an array.
+# Error: COMP96_0149: decompressionunit.vhd : (30, 46): Explicit type conversions are allowed between closely related types only.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2008  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
+# Compile Entity "setbitcounter"
+# Error: COMP96_0078: SetBitCounter.vhd : (8, 22): Unknown identifier "TS_WIDTH".
+# Error: COMP96_0133: SetBitCounter.vhd : (8, 22): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (8, 22): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: SetBitCounter.vhd : (9, 27): Unknown identifier "AXIS_LENGTH".
+# Error: COMP96_0133: SetBitCounter.vhd : (9, 27): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (9, 27): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: SetBitCounter.vhd : (10, 26): Unknown identifier "ADDR_WIDTH".
+# Error: COMP96_0133: SetBitCounter.vhd : (10, 26): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (10, 26): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: SetBitCounter.vhd : (11, 29): Unknown identifier "DELTA_T_WIDTH".
+# Error: COMP96_0133: SetBitCounter.vhd : (11, 29): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (11, 29): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: SetBitCounter.vhd : (12, 27): Unknown identifier "DELTA_T_NUM".
+# Error: COMP96_0133: SetBitCounter.vhd : (12, 27): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (12, 27): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: SetBitCounter.vhd : (13, 23): Unknown identifier "TS_SIZE".
+# Error: COMP96_0133: SetBitCounter.vhd : (13, 23): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (13, 23): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: SetBitCounter.vhd : (14, 26): Unknown identifier "DATA_WIDTH".
+# Error: COMP96_0133: SetBitCounter.vhd : (14, 26): Cannot find object declaration.
+# Error: COMP96_0077: SetBitCounter.vhd : (14, 26): Undefined type of expression. Expected type 'INTEGER'.
+# Compile Architecture "behavioral" of Entity "setbitcounter"
+# Error: COMP96_0018: SetBitCounter.vhd : (26, 23): Identifier expected.
+# Error: COMP96_0015: SetBitCounter.vhd : (26, 23): '<=' expected.
+# Error: COMP96_0040: SetBitCounter.vhd : (26, 23): Incorrect syntax of selected signal assignment.
+# Error: COMP96_0018: SetBitCounter.vhd : (36, 24): Identifier expected.
+# Error: COMP96_0015: SetBitCounter.vhd : (36, 24): '<=' expected.
+# Error: COMP96_0040: SetBitCounter.vhd : (36, 24): Incorrect syntax of selected signal assignment.
+# Compile failure 27 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
+# Compile Entity "setbitcounter"
+# Compile Architecture "behavioral" of Entity "setbitcounter"
+# Error: COMP96_0018: SetBitCounter.vhd : (27, 23): Identifier expected.
+# Error: COMP96_0015: SetBitCounter.vhd : (27, 23): '<=' expected.
+# Error: COMP96_0040: SetBitCounter.vhd : (27, 23): Incorrect syntax of selected signal assignment.
+# Error: COMP96_0018: SetBitCounter.vhd : (37, 24): Identifier expected.
+# Error: COMP96_0015: SetBitCounter.vhd : (37, 24): '<=' expected.
+# Error: COMP96_0040: SetBitCounter.vhd : (37, 24): Incorrect syntax of selected signal assignment.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
+# Compile Entity "setbitcounter"
+# Compile Architecture "behavioral" of Entity "setbitcounter"
+# Error: COMP96_0301: SetBitCounter.vhd : (27, 2): The choice 'others' must be present when all alternatives are not covered.
+# Error: COMP96_0301: SetBitCounter.vhd : (37, 2): The choice 'others' must be present when all alternatives are not covered.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
+# Compile Entity "setbitcounter"
+# Compile Architecture "behavioral" of Entity "setbitcounter"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ControlUnit.vhd $dsn/src/divider.vhd $dsn/../../../Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ControlUnit.vhd
+# Warning: COMP96_0003: Source file "C:\My_Designs\LK\LK_OpticaFlow\src\ControlUnit.vhd" is empty.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\divider.vhd
+# Warning: COMP96_0003: Source file "C:\My_Designs\LK\LK_OpticaFlow\src\divider.vhd" is empty.
+# File: C:\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src\mem.vhd
+# Compile Entity "mem"
+# Compile Architecture "rtl" of Entity "mem"
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2008  $dsn/src/LK_Package.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
+# Compile Package "LK_Package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd $dsn/src/LK_OpticalFlow.vhd $dsn/src/tb_decompression_unit.vhd $dsn/src/ComparisonUnit.vhd $dsn/src/tb_ComparisonUnit.vhd $dsn/src/Comparison.vhd $dsn/src/n_count.vhd $dsn/src/PrefixAdder.vhd $dsn/src/SetBitCounter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
+# Compile Entity "decompression_unit"
+# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_OpticalFlow.vhd
+# Compile Entity "LK_OpticalFlow"
+# Compile Architecture "behavioral" of Entity "LK_OpticalFlow"
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\tb_decompression_unit.vhd
+# Compile Entity "tb_decompression_unit"
+# Compile Architecture "behavioral" of Entity "tb_decompression_unit"
+# Warning: ELAB1_0026: tb_decompression_unit.vhd : (42, 0): There is no default binding for component "decompression_unit". (Port "in_valid" is not on the entity).
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Error: COMP96_0018: ComparisonUnit.vhd : (32, 2): Identifier expected.
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Error: COMP96_0019: ComparisonUnit.vhd : (90, 3): Keyword 'end' expected.
+# Error: COMP96_0016: ComparisonUnit.vhd : (90, 10): Design unit declaration expected.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\tb_ComparisonUnit.vhd
+# Compile Entity "tb_ComparisonUnit"
+# Compile Architecture "behavioral" of Entity "tb_ComparisonUnit"
+# Warning: ELAB1_0026: tb_ComparisonUnit.vhd : (82, 0): There is no default binding for component "decompression_unit". (Port "in_valid" is not on the entity).
+# Warning: ELAB1_0026: tb_ComparisonUnit.vhd : (88, 0): There is no default binding for component "ComparisonUnit". (Port "in_valid_comp" is not on the entity).
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\Comparison.vhd
+# Compile Entity "Comparison"
+# Compile Architecture "behavioral" of Entity "Comparison"
+# Warning: ELAB1_0026: Comparison.vhd : (82, 0): There is no default binding for component "decompression_unit". (Port "in_valid" is not on the entity).
+# Warning: ELAB1_0026: Comparison.vhd : (88, 0): There is no default binding for component "ComparisonUnit". (Port "in_valid_comp" is not on the entity).
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\n_count.vhd
+# Compile Entity "counter"
+# Compile Architecture "behavioral" of Entity "counter"
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\PrefixAdder.vhd
+# Compile Entity "PrefixAdder"
+# Compile Architecture "radix4_sklanski" of Entity "PrefixAdder"
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
+# Compile Entity "setbitcounter"
+# Compile Architecture "behavioral" of Entity "setbitcounter"
+# Compile failure 3 Errors 5 Warnings  Analysis time :  0.8 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Error: COMP96_0018: ComparisonUnit.vhd : (22, 2): Identifier expected.
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Error: COMP96_0329: ComparisonUnit.vhd : (82, 3): Generate statement must have a label.
+# Error: COMP96_0329: ComparisonUnit.vhd : (86, 3): Generate statement must have a label.
+# Error: COMP96_0015: ComparisonUnit.vhd : (97, 1): ';' expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Error: COMP96_0329: ComparisonUnit.vhd : (82, 3): Generate statement must have a label.
+# Error: COMP96_0329: ComparisonUnit.vhd : (86, 3): Generate statement must have a label.
+# Error: COMP96_0015: ComparisonUnit.vhd : (97, 1): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Error: COMP96_0071: ComparisonUnit.vhd : (83, 29): Operator "-" is not defined for such operands.
+# Error: COMP96_0077: ComparisonUnit.vhd : (83, 17): Undefined type of expression. Expected type 'RingBuffer'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Error: COMP96_0015: ComparisonUnit.vhd : (22, 3): ';' expected.
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Error: COMP96_0078: ComparisonUnit.vhd : (94, 5): Unknown identifier "Size_out".
+# Error: COMP96_0133: ComparisonUnit.vhd : (94, 5): Cannot find object declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Error: COMP96_0077: ComparisonUnit.vhd : (94, 17): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0077: ComparisonUnit.vhd : (94, 62): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
+# Compile Entity "ComparisonUnit"
+# Compile Architecture "structural" of Entity "ComparisonUnit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/Shifter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd
+# Compile Entity "shifter"
+# Error: COMP96_0018: Shifter.vhd : (21, 2): Identifier expected.
+# Compile Architecture "behavioral" of Entity "shifter"
+# Error: COMP96_0056: Shifter.vhd : (23, 1): Cannot find referenced entity declaration "shifter".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/Shifter.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd
+# Compile Entity "shifter"
+# Compile Architecture "behavioral" of Entity "shifter"
+# Error: COMP96_0078: Shifter.vhd : (28, 144): Unknown identifier "tempring".
+# Error: COMP96_0078: Shifter.vhd : (28, 180): Unknown identifier "zerodelta".
+# Error: COMP96_0133: Shifter.vhd : (28, 144): Cannot find object declaration.
+# Error: COMP96_0289: Shifter.vhd : (28, 144): Prefix of index must be an array.
+# Error: COMP96_0289: Shifter.vhd : (28, 152): Prefix of index must be an array.
+# Error: COMP96_0077: Shifter.vhd : (28, 144): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0133: Shifter.vhd : (28, 180): Cannot find object declaration.
+# Error: COMP96_0077: Shifter.vhd : (28, 180): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]
