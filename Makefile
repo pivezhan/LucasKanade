@@ -7,7 +7,7 @@ SHELL='bash'
 # With with `modules.sh`
 #
 
-CC = g++
+CC = g++ 
 MPCC = mpic++
 OPENMP = -fopenmp
 CFLAGS = -O3
@@ -16,13 +16,16 @@ LIBS =
 cuCC = nvcc
 cuCFLAGS = -std=c++11 -O3 -arch=compute_30 -code=sm_30
 cuNVCCFLAGS = -std=c++11 -O3 -arch=compute_30 -code=sm_30
+CXXFLAGS = `upcxx-meta PPFLAGS` `upcxx-meta LDFLAGS`
+LDFLAGS = `upcxx-meta LIBFLAGS`
 
 TARGETS = Matching_Ver1 Matching_Ver2 Matching_Ver3 Matching_Ver4 Matching_Ver5 Matching_Ver6 Matching_Ver7
 
 all:	$(TARGETS)
 
-Naive: Naive.cpp
-	$(CC) -o $@ $(LIBS) Naive.cpp
+
+Matching_Ver1: Matching_Ver1.cpp
+	$(CC) -o $@ $(LIBS) Matching_Ver1.cpp
 Matching_Ver2: Matching_Ver2.cpp
 	$(CC) -o $@ $(LIBS) Matching_Ver2.cpp
 Matching_Ver3: Matching_Ver3.cpp
@@ -35,6 +38,18 @@ Matching_Ver6: Matching_Ver6.cpp
 	$(CC) -o $@ $(LIBS) $(OPENMP) Matching_Ver6.cpp
 Matching_Ver7: Matching_Ver7.cpp
 	$(MPCC) -o $@ $(LIBS) $(MPILIBS) Matching_Ver7.cpp
+
+histserial: histserial.cpp
+	$(CC) -std=c++11 -o $@ $(LIBS) histserial.cpp
+
+histlk: histlk.cpp
+	$(CC) -std=c++11 -o $@ $(LIBS) histlk.cpp
+
+lucas: lucaskanade.cpp
+	$(CC) -std=c++11 -o $@ $(LIBS) lucaskanade.cpp
+
+histupc: histupc.cpp
+	$(CC) histupc.cpp -o histupc $(CXXFLAGS) $(LDFLAGS)
 
 clean:
 	rm -f *.o $(TARGETS) *.stdout *.txt

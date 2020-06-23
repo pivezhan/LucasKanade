@@ -1,433 +1,1117 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# Design Explorer: Shortcut to "C:\My_Designs\LK\LK_OpticalFlow.aws" design added.
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+asim -O5 +access +r +m+uramaddressmapper_tb uramaddressmapper_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/URAMAddressMapper_tb.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0122: decompressionunit.vhd : (51, 2): Symbol "prefixarray" has already been declared in this scope.
-# Error: COMP96_0122: decompressionunit.vhd : (68, 1): Symbol "Radix4_reduce" has already been declared in this scope.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\URAMAddressMapper_tb.vhd
+# Compile Entity "URAMAddressMapper_tb"
+# Compile Architecture "behavioral" of Entity "URAMAddressMapper_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6499 kB (elbread=1024 elab2=5125 kernel=350 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  9:48 PM, Monday, December 30, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: uramaddressmapper_tb (behavioral)
+# add wave -noreg {/URAM_AM_in_border}
+# add wave -noreg {/URAM_AM_in_addr_of_block_search}
+# add wave -noreg {/URAM_AM_in_addr_within_block_search}
+# add wave -noreg {/URAM_AM_out_vectorized_addr}
+# 4 signal(s) traced.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/DUT1/URAM_AM_temp_vectorized_addr}
+# 1 signal(s) traced.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/URAMAddressMapper_tb.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0122: decompressionunit.vhd : (68, 1): Symbol "Radix4_reduce" has already been declared in this scope.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: ELAB1_0008: decompressionunit.vhd : (62, 32): Cannot read output : "prefixarray".
-# Error: ELAB1_0008: decompressionunit.vhd : (65, 32): Cannot read output : "prefixarray".
-# Error: ELAB1_0008: decompressionunit.vhd : (70, 32): Cannot read output : "prefixarray".
-# Error: ELAB1_0008: decompressionunit.vhd : (73, 32): Cannot read output : "prefixarray".
-# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Error: COMP96_0018: decompressionunit.vhd : (23, 2): Identifier expected.
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0122: decompressionunit.vhd : (51, 2): Symbol "prefixarray" has already been declared in this scope.
-# Error: COMP96_0078: decompressionunit.vhd : (79, 1): Unknown identifier "data_out".
-# Error: COMP96_0133: decompressionunit.vhd : (79, 1): Cannot find object declaration.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\URAMAddressMapper_tb.vhd
+# Compile Entity "URAMAddressMapper_tb"
+# Compile Architecture "behavioral" of Entity "URAMAddressMapper_tb"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6499 kB (elbread=1024 elab2=5125 kernel=350 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  9:50 PM, Monday, December 30, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: uramaddressmapper_tb (behavioral)
+run @100ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/DUT1/index}
+# 1 signal(s) traced.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/URAMAddressMapper.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "kogge_stone" of Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0015: LK_Package.vhd : (14, 79): ')' expected.
-# Error: COMP96_0018: LK_Package.vhd : (15, 21): Identifier expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0015: LK_Package.vhd : (14, 98): '=>' expected.
-# Error: COMP96_0018: LK_Package.vhd : (15, 21): Identifier expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0018: LK_Package.vhd : (15, 21): Identifier expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0015: LK_Package.vhd : (15, 66): '=>' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0619: LK_Package.vhd : (15, 39): Subaggregates in associations are allowed only for multidimensional arrays and arrays of arrays.
-# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
-# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0619: LK_Package.vhd : (15, 49): Subaggregates in associations are allowed only for multidimensional arrays and arrays of arrays.
-# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
-# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0077: LK_Package.vhd : (15, 39): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
-# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0077: LK_Package.vhd : (15, 39): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0079: LK_Package.vhd : (15, 38): Invalid aggregate.
-# Error: COMP96_0077: LK_Package.vhd : (15, 38): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0029: LK_Package.vhd : (15, 38): Expression expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Error: COMP96_0077: LK_Package.vhd : (15, 41): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0079: LK_Package.vhd : (15, 40): Invalid aggregate.
-# Error: COMP96_0077: LK_Package.vhd : (15, 40): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -work LK_OpticaFlow -2008  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\URAMAddressMapper.vhd
+# Compile Entity "URAMAddressMapper"
+# Compile Architecture "behavioral" of Entity "URAMAddressMapper"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6237 kB (elbread=1024 elab2=4863 kernel=349 sdf=0)
+# KERNEL: Warning: "index" does not have read access. Use switch +access +r for this region.
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  10:06 PM, Monday, December 30, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: uramaddressmapper_tb (behavioral)
+# Warning: WAVEFORM: Signal DUT1/index not found.
+run @100ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Error: COMP96_0016: decompressionunit.vhd : (25, 1): Design unit declaration expected.
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0019: decompressionunit.vhd : (31, 1): Keyword 'when' expected.
-# Error: COMP96_0015: decompressionunit.vhd : (31, 1): ';' expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (64, 141): ')' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (64, 193): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (64, 193): Keyword 'end' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (78, 7): ';' expected.
+# Error: COMP96_0016: NeighborhoodAddressGenerator_A.vhd : (78, 15): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0019: decompressionunit.vhd : (31, 1): Keyword 'when' expected.
-# Error: COMP96_0015: decompressionunit.vhd : (31, 1): ';' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0143: decompressionunit.vhd : (30, 1): Object "Limitted_TS" may not be written
-# Error: COMP96_0078: decompressionunit.vhd : (30, 46): Unknown identifier "to_unssigned".
-# Error: COMP96_0133: decompressionunit.vhd : (30, 46): Cannot find object declaration.
-# Error: COMP96_0289: decompressionunit.vhd : (30, 46): Prefix of index must be an array.
-# Error: COMP96_0149: decompressionunit.vhd : (30, 46): Explicit type conversions are allowed between closely related types only.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Error: COMP96_0078: decompressionunit.vhd : (30, 46): Unknown identifier "to_unssigned".
-# Error: COMP96_0133: decompressionunit.vhd : (30, 46): Cannot find object declaration.
-# Error: COMP96_0289: decompressionunit.vhd : (30, 46): Prefix of index must be an array.
-# Error: COMP96_0149: decompressionunit.vhd : (30, 46): Explicit type conversions are allowed between closely related types only.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2008  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
-# Compile Entity "setbitcounter"
-# Error: COMP96_0078: SetBitCounter.vhd : (8, 22): Unknown identifier "TS_WIDTH".
-# Error: COMP96_0133: SetBitCounter.vhd : (8, 22): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (8, 22): Undefined type of expression. Expected type 'INTEGER'.
-# Error: COMP96_0078: SetBitCounter.vhd : (9, 27): Unknown identifier "AXIS_LENGTH".
-# Error: COMP96_0133: SetBitCounter.vhd : (9, 27): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (9, 27): Undefined type of expression. Expected type 'INTEGER'.
-# Error: COMP96_0078: SetBitCounter.vhd : (10, 26): Unknown identifier "ADDR_WIDTH".
-# Error: COMP96_0133: SetBitCounter.vhd : (10, 26): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (10, 26): Undefined type of expression. Expected type 'INTEGER'.
-# Error: COMP96_0078: SetBitCounter.vhd : (11, 29): Unknown identifier "DELTA_T_WIDTH".
-# Error: COMP96_0133: SetBitCounter.vhd : (11, 29): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (11, 29): Undefined type of expression. Expected type 'INTEGER'.
-# Error: COMP96_0078: SetBitCounter.vhd : (12, 27): Unknown identifier "DELTA_T_NUM".
-# Error: COMP96_0133: SetBitCounter.vhd : (12, 27): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (12, 27): Undefined type of expression. Expected type 'INTEGER'.
-# Error: COMP96_0078: SetBitCounter.vhd : (13, 23): Unknown identifier "TS_SIZE".
-# Error: COMP96_0133: SetBitCounter.vhd : (13, 23): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (13, 23): Undefined type of expression. Expected type 'INTEGER'.
-# Error: COMP96_0078: SetBitCounter.vhd : (14, 26): Unknown identifier "DATA_WIDTH".
-# Error: COMP96_0133: SetBitCounter.vhd : (14, 26): Cannot find object declaration.
-# Error: COMP96_0077: SetBitCounter.vhd : (14, 26): Undefined type of expression. Expected type 'INTEGER'.
-# Compile Architecture "behavioral" of Entity "setbitcounter"
-# Error: COMP96_0018: SetBitCounter.vhd : (26, 23): Identifier expected.
-# Error: COMP96_0015: SetBitCounter.vhd : (26, 23): '<=' expected.
-# Error: COMP96_0040: SetBitCounter.vhd : (26, 23): Incorrect syntax of selected signal assignment.
-# Error: COMP96_0018: SetBitCounter.vhd : (36, 24): Identifier expected.
-# Error: COMP96_0015: SetBitCounter.vhd : (36, 24): '<=' expected.
-# Error: COMP96_0040: SetBitCounter.vhd : (36, 24): Incorrect syntax of selected signal assignment.
-# Compile failure 27 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
-# Compile Entity "setbitcounter"
-# Compile Architecture "behavioral" of Entity "setbitcounter"
-# Error: COMP96_0018: SetBitCounter.vhd : (27, 23): Identifier expected.
-# Error: COMP96_0015: SetBitCounter.vhd : (27, 23): '<=' expected.
-# Error: COMP96_0040: SetBitCounter.vhd : (27, 23): Incorrect syntax of selected signal assignment.
-# Error: COMP96_0018: SetBitCounter.vhd : (37, 24): Identifier expected.
-# Error: COMP96_0015: SetBitCounter.vhd : (37, 24): '<=' expected.
-# Error: COMP96_0040: SetBitCounter.vhd : (37, 24): Incorrect syntax of selected signal assignment.
-# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
-# Compile Entity "setbitcounter"
-# Compile Architecture "behavioral" of Entity "setbitcounter"
-# Error: COMP96_0301: SetBitCounter.vhd : (27, 2): The choice 'others' must be present when all alternatives are not covered.
-# Error: COMP96_0301: SetBitCounter.vhd : (37, 2): The choice 'others' must be present when all alternatives are not covered.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/SetBitCounter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
-# Compile Entity "setbitcounter"
-# Compile Architecture "behavioral" of Entity "setbitcounter"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ControlUnit.vhd $dsn/src/divider.vhd $dsn/../../../Users/lenovo/Desktop/projb/cpre381-toolflow-release/ModelSimWork/src/mem.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ControlUnit.vhd
-# Warning: COMP96_0003: Source file "C:\My_Designs\LK\LK_OpticaFlow\src\ControlUnit.vhd" is empty.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\divider.vhd
-# Warning: COMP96_0003: Source file "C:\My_Designs\LK\LK_OpticaFlow\src\divider.vhd" is empty.
-# File: C:\Users\lenovo\Desktop\projb\cpre381-toolflow-release\ModelSimWork\src\mem.vhd
-# Compile Entity "mem"
-# Compile Architecture "rtl" of Entity "mem"
-# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2008  $dsn/src/LK_Package.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_Package.vhd
-# Compile Package "LK_Package"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/decompressionunit.vhd $dsn/src/LK_OpticalFlow.vhd $dsn/src/tb_decompression_unit.vhd $dsn/src/ComparisonUnit.vhd $dsn/src/tb_ComparisonUnit.vhd $dsn/src/Comparison.vhd $dsn/src/n_count.vhd $dsn/src/PrefixAdder.vhd $dsn/src/SetBitCounter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\decompressionunit.vhd
-# Compile Entity "decompression_unit"
-# Compile Architecture "radix4_sklanski" of Entity "decompression_unit"
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\LK_OpticalFlow.vhd
-# Compile Entity "LK_OpticalFlow"
-# Compile Architecture "behavioral" of Entity "LK_OpticalFlow"
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\tb_decompression_unit.vhd
-# Compile Entity "tb_decompression_unit"
-# Compile Architecture "behavioral" of Entity "tb_decompression_unit"
-# Warning: ELAB1_0026: tb_decompression_unit.vhd : (42, 0): There is no default binding for component "decompression_unit". (Port "in_valid" is not on the entity).
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Error: COMP96_0018: ComparisonUnit.vhd : (32, 2): Identifier expected.
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Error: COMP96_0019: ComparisonUnit.vhd : (90, 3): Keyword 'end' expected.
-# Error: COMP96_0016: ComparisonUnit.vhd : (90, 10): Design unit declaration expected.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\tb_ComparisonUnit.vhd
-# Compile Entity "tb_ComparisonUnit"
-# Compile Architecture "behavioral" of Entity "tb_ComparisonUnit"
-# Warning: ELAB1_0026: tb_ComparisonUnit.vhd : (82, 0): There is no default binding for component "decompression_unit". (Port "in_valid" is not on the entity).
-# Warning: ELAB1_0026: tb_ComparisonUnit.vhd : (88, 0): There is no default binding for component "ComparisonUnit". (Port "in_valid_comp" is not on the entity).
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\Comparison.vhd
-# Compile Entity "Comparison"
-# Compile Architecture "behavioral" of Entity "Comparison"
-# Warning: ELAB1_0026: Comparison.vhd : (82, 0): There is no default binding for component "decompression_unit". (Port "in_valid" is not on the entity).
-# Warning: ELAB1_0026: Comparison.vhd : (88, 0): There is no default binding for component "ComparisonUnit". (Port "in_valid_comp" is not on the entity).
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\n_count.vhd
-# Compile Entity "counter"
-# Compile Architecture "behavioral" of Entity "counter"
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\PrefixAdder.vhd
-# Compile Entity "PrefixAdder"
-# Compile Architecture "radix4_sklanski" of Entity "PrefixAdder"
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\SetBitCounter.vhd
-# Compile Entity "setbitcounter"
-# Compile Architecture "behavioral" of Entity "setbitcounter"
-# Compile failure 3 Errors 5 Warnings  Analysis time :  0.8 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Error: COMP96_0018: ComparisonUnit.vhd : (22, 2): Identifier expected.
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Error: COMP96_0329: ComparisonUnit.vhd : (82, 3): Generate statement must have a label.
-# Error: COMP96_0329: ComparisonUnit.vhd : (86, 3): Generate statement must have a label.
-# Error: COMP96_0015: ComparisonUnit.vhd : (97, 1): ';' expected.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Error: COMP96_0329: ComparisonUnit.vhd : (82, 3): Generate statement must have a label.
-# Error: COMP96_0329: ComparisonUnit.vhd : (86, 3): Generate statement must have a label.
-# Error: COMP96_0015: ComparisonUnit.vhd : (97, 1): ';' expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Error: COMP96_0071: ComparisonUnit.vhd : (83, 29): Operator "-" is not defined for such operands.
-# Error: COMP96_0077: ComparisonUnit.vhd : (83, 17): Undefined type of expression. Expected type 'RingBuffer'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Error: COMP96_0015: ComparisonUnit.vhd : (22, 3): ';' expected.
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Error: COMP96_0078: ComparisonUnit.vhd : (94, 5): Unknown identifier "Size_out".
-# Error: COMP96_0133: ComparisonUnit.vhd : (94, 5): Cannot find object declaration.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Error: COMP96_0077: ComparisonUnit.vhd : (94, 17): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0077: ComparisonUnit.vhd : (94, 62): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/ComparisonUnit.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\ComparisonUnit.vhd
-# Compile Entity "ComparisonUnit"
-# Compile Architecture "structural" of Entity "ComparisonUnit"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/Shifter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd
-# Compile Entity "shifter"
-# Error: COMP96_0018: Shifter.vhd : (21, 2): Identifier expected.
-# Compile Architecture "behavioral" of Entity "shifter"
-# Error: COMP96_0056: Shifter.vhd : (23, 1): Cannot find referenced entity declaration "shifter".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -work LK_OpticaFlow -2002  $dsn/src/Shifter.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: C:\My_Designs\LK\LK_OpticaFlow\src\Shifter.vhd
-# Compile Entity "shifter"
-# Compile Architecture "behavioral" of Entity "shifter"
-# Error: COMP96_0078: Shifter.vhd : (28, 144): Unknown identifier "tempring".
-# Error: COMP96_0078: Shifter.vhd : (28, 180): Unknown identifier "zerodelta".
-# Error: COMP96_0133: Shifter.vhd : (28, 144): Cannot find object declaration.
-# Error: COMP96_0289: Shifter.vhd : (28, 144): Prefix of index must be an array.
-# Error: COMP96_0289: Shifter.vhd : (28, 152): Prefix of index must be an array.
-# Error: COMP96_0077: Shifter.vhd : (28, 144): Undefined type of expression. Expected type 'BOOLEAN'.
-# Error: COMP96_0133: Shifter.vhd : (28, 180): Cannot find object declaration.
-# Error: COMP96_0077: Shifter.vhd : (28, 180): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (64, 141): ')' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (64, 197): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (64, 197): Keyword 'end' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (65, 141): ')' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (65, 195): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (65, 195): Keyword 'end' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (77, 8): ';' expected.
+# Error: COMP96_0016: NeighborhoodAddressGenerator_A.vhd : (77, 16): Design unit declaration expected.
 # Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (64, 120): ')' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (64, 176): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (64, 176): Keyword 'end' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (65, 120): ')' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (65, 174): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (65, 174): Keyword 'end' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (77, 8): ';' expected.
+# Error: COMP96_0016: NeighborhoodAddressGenerator_A.vhd : (77, 16): Design unit declaration expected.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/URAMAddressMapper.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\URAMAddressMapper.vhd
+# Compile Entity "URAMAddressMapper"
+# Compile Architecture "behavioral" of Entity "URAMAddressMapper"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0393: NeighborhoodAddressGenerator_A.vhd : (81, 31): Cannot read output : "NAG_out_addr_of_block_search".
+# Error: COMP96_0143: NeighborhoodAddressGenerator_A.vhd : (89, 5): Object "WriteEnable" may not be written
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0143: NeighborhoodAddressGenerator_A.vhd : (90, 5): Object "WriteEnable" may not be written
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A_tb.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A_tb"
+# Error: COMP96_0028: NeighborhoodAddressGenerator_A_tb.vhd : (30, 3): Identifier or keyword expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A_tb.vhd : (30, 3): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A_tb.vhd : (30, 4): Keyword 'end' expected.
+# Error: COMP96_0016: NeighborhoodAddressGenerator_A_tb.vhd : (31, 1): Design unit declaration expected.
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A_tb"
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A_tb.vhd : (66, 1): ';' expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A_tb.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A_tb"
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A_tb.vhd : (64, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A_tb.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A_tb.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+neighborhoodaddressgenerator_a_tb neighborhoodaddressgenerator_a_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0013 NeighborhoodAddressGenerator_A.vhd (90): Index 16 is out of range (15 downto 0) of "WriteEnable".
+# ELAB2: Last instance before error: /DUT1/tot__16/row2__-1/col2__-1
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+neighborhoodaddressgenerator_a_tb neighborhoodaddressgenerator_a_tb behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6521 kB (elbread=1026 elab2=5145 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  4:46 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+# add wave -noreg {/NAG_in_addr}
+# add wave -noreg {/NAG_out_addr_within_block_search}
+# add wave -noreg {/WriteEnable}
+# 3 signal(s) traced.
+run @100ns
+# RUNTIME: Fatal Error: RUNTIME_0046 NeighborhoodAddressGenerator_A_tb.vhd (83): Incompatible ranges; left: (19 downto 0), right: (18 downto 0).
+# KERNEL: Time: 0 ps,  Iteration: 0,  TOP instance,  Process: line__71.
+# KERNEL: stopped at delta: 0 at time 0 ps.
+# Error: Fatal error occurred during simulation.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A_tb.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A_tb.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6521 kB (elbread=1026 elab2=5145 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  4:48 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__69.
+# RUNTIME: Fatal Error: RUNTIME_0043 NeighborhoodAddressGenerator_A.vhd (69): Value -1 out of range (0 to 2147483647).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__69.
+# KERNEL: stopped at delta: 0 at time 0 ps.
+# Error: Fatal error occurred during simulation.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0093: NeighborhoodAddressGenerator_A.vhd : (69, 216): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: NeighborhoodAddressGenerator_A.vhd : (69, 204): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_UNSIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6521 kB (elbread=1026 elab2=5145 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  4:55 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__82.
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/DUT1/MC_out_temp_addr_Y}
+# add wave -noreg {/DUT1/MC_out_temp_addr_X}
+# 2 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6521 kB (elbread=1026 elab2=5145 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  5:37 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__69.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__82.
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (70, 258): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0263: NeighborhoodAddressGenerator_A.vhd : (70, 199): Type names are not allowed as primaries.
+# Error: COMP96_0138: NeighborhoodAddressGenerator_A.vhd : (70, 216): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0090: NeighborhoodAddressGenerator_A.vhd : (70, 199): Expected array type.
+# Error: COMP96_0077: NeighborhoodAddressGenerator_A.vhd : (70, 118): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0263: NeighborhoodAddressGenerator_A.vhd : (70, 200): Type names are not allowed as primaries.
+# Error: COMP96_0138: NeighborhoodAddressGenerator_A.vhd : (70, 217): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0090: NeighborhoodAddressGenerator_A.vhd : (70, 200): Expected array type.
+# Error: COMP96_0077: NeighborhoodAddressGenerator_A.vhd : (70, 118): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6525 kB (elbread=1026 elab2=5148 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  6:41 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: stopped at time: 100 ns
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6525 kB (elbread=1026 elab2=5149 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  6:42 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6525 kB (elbread=1026 elab2=5149 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  6:43 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__73.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1,  Process: line__93.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__76.
+# KERNEL: stopped at time: 100 ns
+# Warning: Cannot set breakpoint. No executable statement found or debugging data is unavailable. Compile source files with the -dbg argument of the acom/alog command or check the Enable Debug option in the Compilation | VHDL/Verilog category of the Design Settings dialog box.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (98, 41): Keyword '<=' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (98, 78): Keyword 'when' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (98, 78): ';' expected.
+# Error: COMP96_0019: NeighborhoodAddressGenerator_A.vhd : (98, 78): Keyword 'end' expected.
+# Error: COMP96_0015: NeighborhoodAddressGenerator_A.vhd : (100, 7): ';' expected.
+# Error: COMP96_0016: NeighborhoodAddressGenerator_A.vhd : (100, 15): Design unit declaration expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Error: COMP96_0266: NeighborhoodAddressGenerator_A.vhd : (85, 136): Null waveform element cannot appear in a concurrent signal assignment statement.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6530 kB (elbread=1026 elab2=5154 kernel=349 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\LK\LK_OpticaFlow\src\wave.asdb
+#  7:47 PM, Tuesday, December 31, 2019
+#  Simulation has been initialized
+#  Selected Top-Level: neighborhoodaddressgenerator_a_tb (behavioral)
+run @100ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__74.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__74.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_left_boundary,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__-1/check_bottom_boundary,  Process: line__83.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_right_boundary,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__0/check_bottom_boundary,  Process: line__83.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_right_boundary,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__82.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__-1/col__1/check_bottom_boundary,  Process: line__83.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__74.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__74.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_left_boundary,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__-1/check_top_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_right_boundary,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__0/check_top_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_right_boundary,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__0/col__1/check_top_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__74.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__74.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_left_boundary,  Process: line__75.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__-1/check_top_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_right_boundary,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__0/check_top_boundary,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__70.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_right_boundary,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__78.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DUT1/row__1/col__1/check_top_boundary,  Process: line__79.
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/DUT1/index}
+# 1 signal(s) traced.
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.vhd
+# Compile Entity "NeighborhoodAddressGenerator_A"
+# Compile Architecture "behavioral" of Entity "NeighborhoodAddressGenerator_A"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work LK_OpticaFlow -2002  $dsn/src/NeighborhoodAddressGenerator_A.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\My_Designs\LK\LK_OpticaFlow\src\NeighborhoodAddressGenerator_A.v
