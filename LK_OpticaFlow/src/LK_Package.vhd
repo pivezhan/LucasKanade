@@ -14,7 +14,9 @@ package LK_Package is
     constant NBPIPE : integer := 3;    -- Number of pipeline Registers
 	constant AXIS_LENGTH : integer := 10; -- the width of x, y addresses in frame 
 	constant RAMBLOCK : integer := 8; -- the block dimension of event-based histogram
-	constant EventSearchRadius: integer := 3; -- 1: 3*3, 3: 5*5, 5: 7*7	
+	constant edged : integer := 1; -- boundary region for gradient calculation
+	constant EventSearchRadius: integer := 3; -- 1: 3*3, 3: 5*5, 5: 7*7
+	constant GradientSearchDistance: integer := EventSearchRadius - edged;
 	constant FIFO_DEPTH : integer:=6;
 	constant NoiseSearchRadius : integer:= 1;
 
@@ -26,7 +28,11 @@ package LK_Package is
 	constant RAMBLOCKADDR : integer := integer(ceil(log2(real(RAMBLOCK)))); -- the block addr width of event-based histogram
 	constant RAM2DBLOCK : integer := RAMBLOCK*RAMBLOCK; -- the block dimension of event-based histogram
 	constant EventSearchDiameter : integer := (2*EventSearchRadius)+1; -- diameter of circle
+	constant GradientSearchDiameter : integer := (2*GradientSearchDistance)+1; -- diameter of circle
 	constant EventSearch2D : integer := EventSearchDiameter*EventSearchDiameter; -- two dimensional area
+	constant GradientSearch2D : integer := GradientSearchDiameter*GradientSearchDiameter; -- two dimensional area
+	constant GradientSearch2Cycle : integer := integer(ceil(real(GradientSearch2D)*0.5)); -- two dimensional area
+
 --- threshold values
 	constant NoiseThreshold : std_logic_vector((TS_WIDTH-1) downto 0):=(others=>'1');
 	constant DeltaThreshold : std_logic_vector((TS_WIDTH-1) downto 0):=(others=>'1');
@@ -109,5 +115,9 @@ type data_std_array3d is array (EventSearchRadius downto -EventSearchRadius)  of
 subtype histsize is std_logic_vector((Size_Width-1) downto 0);
 type histsize1d is array (EventSearchRadius downto -EventSearchRadius) of histsize;
 type histsize2d is array (EventSearchRadius downto -EventSearchRadius) of histsize1d;
+
+subtype histsizegrad is std_logic_vector((2*Size_Width-1) downto 0);
+type histsize1d_grad is array (GradientSearchDistance downto -GradientSearchDistance) of histsizegrad;
+type histsize2d_grad is array (GradientSearchDistance downto -GradientSearchDistance) of histsize1d_grad;
 
 end package;
