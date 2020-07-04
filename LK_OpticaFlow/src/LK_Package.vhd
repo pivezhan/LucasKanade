@@ -1,3 +1,12 @@
+-------------------------------------------------------------------------
+-- Mohammad Pivezhandi
+-- Department of Electrical and Computer Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+-- Module: package for all constsants and functions for Lucas kanade
+-- File: LK_Package.vhd
+-------------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

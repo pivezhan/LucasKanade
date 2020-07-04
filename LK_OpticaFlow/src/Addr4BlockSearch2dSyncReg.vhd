@@ -3,11 +3,11 @@
 -- Department of Electrical and Computer Engineering
 -- Iowa State University
 -------------------------------------------------------------------------
--- Flip-Flop with
--- Rising-edge Clock
+-- Module: pipeline with Rising-edge Clock
 -- Active-high Synchronous Clear
 -- Active-high Clock Enable
--- File: registers_1.vhd
+-- File: Addr4BlockSearch2dSyncReg.vhd
+-------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.std_logic_1164.all;

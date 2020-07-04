@@ -1,4 +1,15 @@
--- I didn't include border regions in my analysis
+-- Note: I didn't include border regions in my analysis
+-- The collector should deal with matrix input and 
+-- the generic processing needs a vectorized implemementation
+-------------------------------------------------------------------------
+-- Mohammad Pivezhandi
+-- Department of Electrical and Computer Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+-- Module: pipeline with Rising-edge Clock
+-- Active-high Synchronous Clear
+-- Active-high Clock Enable
+-- File: Addr4BlockSearch2dSyncReg.vhd
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -27,22 +38,24 @@ generic (
 	FIFO_DEPTH : integer :=  FIFO_DEPTH-- depth of FIFO ram depth
 		 );
 port    (
-	dx2_in : in histsize2d_grad; -- sptial derivation second order
-	dy2_in : in histsize2d_grad; -- sptial derivation second order
-	dxdy_in : in histsize2d_grad;  -- sptial derivation second order
-	dxdt_in : in histsize2d_grad; -- temporal and spatial derivation
-	dydt_in : in histsize2d_grad; -- temporal and spatial derivation
-	dx2_out : out histsizegrad;
-	dy2_out : out histsizegrad;
-	dxdy_out : out histsizegrad;
-	dxdt_out : out histsizegrad;
-	dydt_out : out histsizegrad);
+	dx2_in : in histsize2d_grad; -- input d*d matrix sptial derivation second order
+	dy2_in : in histsize2d_grad; -- input d*d matrix sptial derivation second order
+	dxdy_in : in histsize2d_grad;  -- input d*d matrix sptial derivation second order
+	dxdt_in : in histsize2d_grad; -- input d*d matrix temporal and spatial derivation
+	dydt_in : in histsize2d_grad; -- input d*d matrix temporal and spatial derivation
+	dy2_out : out std_logic_vector((2*Size_Width-1) downto 0); -- output sum of sptial derivation second order
+	dx2_out : out std_logic_vector((2*Size_Width-1) downto 0); -- output sum of sptial derivation second order
+	dxdy_out : out std_logic_vector((2*Size_Width-1) downto 0); -- output sum of sptial derivation second order
+	dxdt_out : out std_logic_vector((2*Size_Width-1) downto 0); -- output sum of sptial and tempral derivation second order
+	dydt_out : out std_logic_vector((2*Size_Width-1) downto 0)); -- output sum of sptial and temporal derivation second order
 end Collector;
 
 architecture behavioral of Collector is 
+
 constant allzeros : std_logic_vector(Size_Width-1 downto 0):=(others => '0');
 constant allzeros_1 : std_logic_vector(Size_Width-2 downto 0):=(others => '0');
-type addervectorarray is array (GradientSearch2Cycle-1 downto 0) of std_logic_vector((2*Size_Width-1) downto 0);
+
+type addervectorarray is array (HalfGradientSearch2D-1 downto 0) of std_logic_vector((2*Size_Width-1) downto 0);
 type addervectorarray2d is array ((EventSearchRadius+4) downto 0) of addervectorarray;
 signal dx2_vec : addervectorarray2d:=(others => (others => (others => '0')));
 signal dy2_vec : addervectorarray2d:=(others => (others => (others => '0')));
@@ -51,6 +64,9 @@ signal dxdt_vec : addervectorarray2d:=(others => (others => (others => '0')));
 signal dydt_vec : addervectorarray2d:=(others => (others => (others => '0')));
 
 begin
+
+---Matrix based addition and change to vector for the first stage
+-- vertical summation
 xaxis1: for i in -GradientSearchDistance to GradientSearchDistance generate -- X_addr
 	yaxis1: for j in 1 to GradientSearchDistance generate -- Y_addr
 		dx2_vec(0)(((i+GradientSearchDistance)*GradientSearchDistance) + j-1) <= dx2_in(i)(j) + dx2_in(i)(-j); --
@@ -69,11 +85,11 @@ xaxis2: for i in 1 to GradientSearchDistance generate -- X_addr
 		dydt_vec(0)(i+(GradientSearchDistance*GradientSearchDiameter)-1) <= dydt_in(i)(0) + dydt_in(-i)(0); --
 end generate;
 
-dx2_vec(0)(GradientSearch2Cycle-1) <= dx2_in(0)(0); --
-dy2_vec(0)(GradientSearch2Cycle-1) <= dy2_in(0)(0); --
-dxdy_vec(0)(GradientSearch2Cycle-1) <= dxdy_in(0)(0); --
-dxdt_vec(0)(GradientSearch2Cycle-1) <= dxdt_in(0)(0); --
-dydt_vec(0)(GradientSearch2Cycle-1) <= dydt_in(0)(0); --
+dx2_vec(0)(HalfGradientSearch2D-1) <= dx2_in(0)(0); --
+dy2_vec(0)(HalfGradientSearch2D-1) <= dy2_in(0)(0); --
+dxdy_vec(0)(HalfGradientSearch2D-1) <= dxdy_in(0)(0); --
+dxdt_vec(0)(HalfGradientSearch2D-1) <= dxdt_in(0)(0); --
+dydt_vec(0)(HalfGradientSearch2D-1) <= dydt_in(0)(0); --
 
 outerloop: for k in 1 to GradientSearchDistance-1 generate
 	innerloop: for l in 0 to integer(floor(real(GradientSearch2D)*(2*(-(k+1))))) generate
